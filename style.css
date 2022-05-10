@@ -126,8 +126,8 @@ body {
 }
 
 #card img {
-  height: 10vh;
-  width: 10vh;
+  height: 15%;
+  width: 15%;
   border-radius: 50%;
   border: 1px solid white;
 }
