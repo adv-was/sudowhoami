@@ -28,7 +28,7 @@ body {
 }
 
 .header__button {
-  width: var(--header-height);
+  width: 80px;
   flex-shrink: 0;
   background: none;
   outline: none;
@@ -99,7 +99,8 @@ body {
 #mainsec {
   height: 100vh;
   width: 100%;
-  background: transparent;
+  background: url('https://i.pinimg.com/originals/09/56/a8/0956a8cd5c9deb51b642877c1fa89eb0.gif');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,12 +108,14 @@ body {
   color: silver;
   font-family: sans-serif;
   font-weight: 100;
+  border-radius: 20px;
+  margin-bottom: 25%;
 }
 
 #card {
   margin: 15px;
-  height: 50%;
-  width: 80%;
+  height: 300px;
+  width: 300px;
   background: linear-gradient(to right, #01DDFF, #5462FF, #FF1BD7);
   border-radius: 10px;
   display: flex;
