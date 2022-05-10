@@ -1,0 +1,243 @@
+html,
+body {
+  font-family: 'Sora', sans-serif;
+  background: #171717;
+  overflow-x: hidden;
+}
+
+.preload * {
+  transition: none !important;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  display: flex;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.header.nav {
+  height: 60px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+.header__button {
+  width: var(--header-height);
+  flex-shrink: 0;
+  background: none;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.nav__links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100vh;
+  width: 250px;
+  padding-top: 5vh;
+  background: linear-gradient(to right bottom, #FF0183, #5901FF);
+  transform: translateX(-250px);
+  transition: transform 0.3s;
+}
+
+.nav--open .nav__links {
+  transform: translateX(0);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 12px 15px;
+  background: transform 0.2s;
+}
+
+.nav__link>i {
+  margin-right: 15px;
+}
+
+.nav__link--active {
+  color: #009578;
+}
+
+.nav__link--active,
+.nav__link:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.nav__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nav--open .nav__overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+#mainsec {
+  height: 100vh;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: silver;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+#card {
+  margin: 15px;
+  height: 50vh;
+  width: 50vh;
+  background: linear-gradient(to right, #01DDFF, #5462FF, #FF1BD7);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: ghostwhite;
+  font-family: 'Sora', sans-serif;
+  transition: all 0.3s;
+}
+
+#card img {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+#card span {
+  font-size: 15px;
+}
+
+#card:hover {
+  transform: scale(1.1);
+}
+
+#line {
+  height: 2px;
+  width: 40%;
+  background: linear-gradient(to right, #6139F8, #1DFD93);
+  margin-left: 5vh;
+}
+
+#about {
+  height: auto;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  height: 50%;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  color: silver;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  margin-left: 10px;
+}
+
+#about #title h2 {
+  font-family: 'Sora', sans-serif;
+}
+
+#realabout {
+  height: 50%;
+  width: 95%;
+  padding-left: 10px;
+  font-family: 'Sora', sans-serif;
+  color: silver;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 25%;
+}
+
+#realabout span {
+  background: linear-gradient(to right, #4900FF, #FF00AF);
+  padding: 2px;
+  border-radius: 4px;
+  color: white;
+}
+
+#skills {
+  height: 100vh;
+  width: 100%;
+}
+
+#title-sec {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: silver;
+  padding-left: 10px;
+}
+
+#realskills {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#realskills h3 {
+  background: linear-gradient(to right, #4900FF, #FF00AF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+progress {
+  border-radius: 7px;
+  width: 80%;
+  height: 15px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+progress::-webkit-progress-bar {
+  background-color: #333333;
+  border-radius: 7px;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(to right, #6139F8, #1DFD93);
+  border-radius: 7px;
+}
+
+progress::-moz-progress-bar {
+  /* style rules */
+}
