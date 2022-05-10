@@ -111,8 +111,8 @@ body {
 
 #card {
   margin: 15px;
-  height: 50vh;
-  width: 50vh;
+  height: 30vh;
+  width: 30vh;
   background: linear-gradient(to right, #01DDFF, #5462FF, #FF1BD7);
   border-radius: 10px;
   display: flex;
@@ -126,8 +126,8 @@ body {
 }
 
 #card img {
-  height: 15vh;
-  width: 15vh;
+  height: 10vh;
+  width: 10vh;
   border-radius: 50%;
   border: 1px solid white;
 }
