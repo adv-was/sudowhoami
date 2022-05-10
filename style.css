@@ -111,8 +111,8 @@ body {
 
 #card {
   margin: 15px;
-  height: 300px;
-  width: 300px;
+  height: 50%;
+  width: 50%;
   background: linear-gradient(to right, #01DDFF, #5462FF, #FF1BD7);
   border-radius: 10px;
   display: flex;
