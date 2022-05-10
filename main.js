@@ -17,3 +17,5 @@ window.addEventListener('scroll', () => {
   const header = document.querySelector('.header')
   header.classList.toggle('nav', window.scrollY > 0)
 })
+
+AOS.init();
